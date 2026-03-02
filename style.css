@@ -67,3 +67,39 @@ footer {
     color: var(--white);
     margin-top: 4rem;
 }
+.star-rating {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.star {
+    color: gray;
+}
+
+.feedback {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.rating {
+    color: gold;
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.delete-btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #922b21;
+}
