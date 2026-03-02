@@ -7,25 +7,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <h1>Feedbacks</h1>
+        <h1>Wellness Basket Blog</h1>
         <nav>
             <a href="index.html">Home</a>
+            <a href="tips.html">Tips</a>
             <a href="feedbacks.html">Feedbacks</a>
         </nav>
     </header>
+
     <main>
         <section class="feedbacks">
             <h2>User Feedbacks</h2>
-            <!-- You can dynamically fill in feedbacks here or hardcode some to start -->
+
             <article class="feedback">
                 <p>"Fantastic wellness tips! The blog is easy to read and very informative."</p>
                 <span class="author">- Jane Doe</span>
             </article>
+
+        </section>
+
+        <!-- Feedback Form Section -->
+        <section class="feedback-form">
+            <h2>Leave Your Feedback</h2>
+
+            <form action="#" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="message">Your Feedback:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2026 Wellness Basket Hub</p>
+        <p>&copy; 2026 Wellness Basket Hub | All Rights Reserved</p>
     </footer>
+
 </body>
 </html>
