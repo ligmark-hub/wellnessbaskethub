@@ -19,24 +19,34 @@
 
     <main>
         <!-- Feedback Form Section -->
-        <section class="feedback-form">
-            <h2>Leave Your Feedback</h2>
+<section class="feedback-form">
+    <h2>Leave Your Feedback</h2>
 
-            <form action="#" method="post">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
+    <form id="feedbackForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" required>
 
-                <label for="message">Your Feedback:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+        <label>Rate Us:</label>
+        <div class="star-rating">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
 
-                <button type="submit">Submit Feedback</button>
-            </form>
-        </section>
+        <label for="message">Your Feedback:</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+</section>
+
+<script src="script.js"></script>
+</body>
     </main>
 
     <footer>
         <p>&copy; 2026 Wellness Basket Hub | All Rights Reserved</p>
     </footer>
-
-</body>
 </html>
