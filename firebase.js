@@ -37,24 +37,24 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
 
-    const user = auth.currentUser;
-    if (!user) return alert("Please login first.");
+  const user = auth.currentUser;
+  if (!user) return alert("Please login first.");
 
-    const name = document.getElementById("name").value;
-    const message = document.getElementById("message").value;
+  const name = document.getElementById("name").value.trim();
+  const message = document.getElementById("message").value.trim();
 
-    await addDoc(collection(db, "feedbacks"), {
-      name: name,
-      message: message,
-      userId: user.uid,
-      createdAt: new Date()
-    });
+  if (!name || !message) return alert("Please fill both fields");
 
-    alert("Feedback submitted!");
-    form.reset();
+  await addDoc(collection(db, "feedbacks"), {
+    name,
+    message,
+    userId: user.uid,
+    createdAt: new Date()
   });
 
+  form.reset();
+  document.getElementById("name").focus(); // focus back for next input
 });
