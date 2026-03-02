@@ -9,7 +9,6 @@ const firebaseConfig = {
   storageBucket: "wellness-basket-12465.firebasestorage.app",
   messagingSenderId: "322509208088",
   appId: "1:322509208088:web:2749b20d0c810993ac616d",
-  measurementId: "G-H74ZKE3BH7"
 };
 
 const app = initializeApp(firebaseConfig);
